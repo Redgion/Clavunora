@@ -1,0 +1,28 @@
+{
+  "id": 53,
+  "path": "ftp/SchumannR/O68/schumann-op68-10-gai-laboureur/schumann-op68-10-gai-laboureur.ly",
+  "url": "https://www.mutopiaproject.org/ftp/SchumannR/O68/schumann-op68-10-gai-laboureur/schumann-op68-10-gai-laboureur.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Creative Commons Attribution-ShareAlike 2.5",
+      "Creative Commons Attribution-ShareAlike 2.5"
+    ],
+    "maintainer": [
+      "Philippe Hézaine"
+    ],
+    "composer": [
+      "Robert Schumann (1810-1856)"
+    ],
+    "title": [
+      "Album pour la jeunesse"
+    ],
+    "footer": [
+      "Mutopia-2007/02/11-659"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

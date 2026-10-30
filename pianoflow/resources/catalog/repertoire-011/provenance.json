@@ -1,0 +1,15 @@
+{
+  "id": 11,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/7/55/QmPYnWB1njn2PqjQcdTXDo7XFuybDjarHUjTVT2XXzgxML.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #4662473 · Skip to my Lou",
+  "source_score": "https://musescore.com/score/4662473",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 96,
+  "url": "https://noctavepiano.com/en/sheet-music/liszt-la-campanella/",
+  "file": "https://noctavepiano.com/partitions/liszt-la-campanella/liszt-la-campanella.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "edition": "Source of the edition Transcription MuseScore (CC0), d’après la partition MuseScore 106022 (CC0) Licence of the files CC0 1.0 Noctave’s changes no note changed from the source Edition notes: the source, in full From the catalogue licences of Noctave, in French. Transcription publiée sur MuseScore ( https://musescore.com/score/5570847 , MuseScore 3.0.5, 2019) sous CC0 1.0 (vérifiée par le porteur du projet le 2026-10-08), recopiée de la partition https://musescore.com/score/106022 (champ <source> du fichier), elle aussi sous CC0 1.0 (auteur inconnu ; vérifiée par le porteur du projet le 2026-10-08) ; source catalog/musescore/sources/liszt-la-campanella.mxl , fiche pieces/liszt-la-campanella.json ; altérations montrées corrigées (lot 2, relecture) ",
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 14,
+  "review": "pending"
+}

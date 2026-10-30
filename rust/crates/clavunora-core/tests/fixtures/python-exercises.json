@@ -1,0 +1,1546 @@
+{
+  "course-1": {
+    "title": "Найдите до",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 0.75,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 1.5,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 2.25,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      }
+    ],
+    "bpm": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 1,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Найдите до первой октавы (C4). Сыграйте большим пальцем правой руки. Отпускайте клавишу перед повтором.",
+    "source": "Собственные упражнения Clavunora",
+    "tempo_map": []
+  },
+  "course-2": {
+    "title": "Пять пальцев правой руки",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 0.75,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 64,
+        "start": 1.5,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 65,
+        "start": 2.25,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 67,
+        "start": 3.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 65,
+        "start": 3.75,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 64,
+        "start": 4.5,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 62,
+        "start": 5.25,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 6.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      }
+    ],
+    "bpm": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 1,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Поставьте пальцы на до–ре–ми–фа–соль. 1 — большой, 5 — мизинец. Играйте по порядку без перемещения руки.",
+    "source": "Собственные упражнения Clavunora",
+    "tempo_map": []
+  },
+  "course-3": {
+    "title": "Пять пальцев левой руки",
+    "notes": [
+      {
+        "pitch": 48,
+        "start": 0.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 50,
+        "start": 0.75,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 4
+      },
+      {
+        "pitch": 52,
+        "start": 1.5,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 53,
+        "start": 2.25,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 2
+      },
+      {
+        "pitch": 55,
+        "start": 3.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 53,
+        "start": 3.75,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 2
+      },
+      {
+        "pitch": 52,
+        "start": 4.5,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 50,
+        "start": 5.25,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 4
+      },
+      {
+        "pitch": 48,
+        "start": 6.0,
+        "duration": 0.65,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      }
+    ],
+    "bpm": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 1,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Левая рука: мизинец на до, большой на соль. Сначала играйте с ожиданием, затем попробуйте ровный ритм.",
+    "source": "Собственные упражнения Clavunora",
+    "tempo_map": []
+  },
+  "course-4": {
+    "title": "Ритм и паузы",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 0.75,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 64,
+        "start": 1.5,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 60,
+        "start": 2.25,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 64,
+        "start": 3.0,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 62,
+        "start": 3.75,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 4.5,
+        "duration": 0.35,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      }
+    ],
+    "bpm": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 1,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Считайте 1–2–3–4. После каждой ноты оставляйте паузу. В непрерывном режиме следите за моментом нажатия и отпускания.",
+    "source": "Собственные упражнения Clavunora",
+    "tempo_map": []
+  },
+  "course-5": {
+    "title": "Две руки вместе",
+    "notes": [
+      {
+        "pitch": 48,
+        "start": 0,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 0,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 48,
+        "start": 1,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 62,
+        "start": 1,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 48,
+        "start": 2,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 64,
+        "start": 2,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 48,
+        "start": 3,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 3,
+        "duration": 0.8,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      }
+    ],
+    "bpm": 60,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Левая",
+      "Правая"
+    ],
+    "difficulty": 2,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Левая рука повторяет до, правая играет до–ре–ми–до. Нажимайте обе ноты одновременно.",
+    "source": "Собственное упражнение Clavunora",
+    "tempo_map": []
+  },
+  "course-6": {
+    "title": "Первый аккорд",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 64,
+        "start": 0.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 67,
+        "start": 0.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 1.5,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 64,
+        "start": 1.5,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 67,
+        "start": 1.5,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 3.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 64,
+        "start": 3.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 67,
+        "start": 3.0,
+        "duration": 1.2,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      }
+    ],
+    "bpm": 80,
+    "time_signature": [
+      4,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 2,
+    "composer": "",
+    "work": "Курс с нуля",
+    "description": "Сыграйте до–ми–соль пальцами 1–3–5 правой руки. Все три клавиши должны быть нажаты вместе.",
+    "source": "Собственное упражнение Clavunora",
+    "tempo_map": []
+  },
+  "birthday-melody": {
+    "title": "С днём рождения",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 0.46875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 0.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 1.25,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 65,
+        "start": 1.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 64,
+        "start": 2.5,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 60,
+        "start": 3.75,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 4.21875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 4.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 5.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 67,
+        "start": 5.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 65,
+        "start": 6.25,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 60,
+        "start": 7.5,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 7.96875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 72,
+        "start": 8.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 8.75,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 9.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 64,
+        "start": 10.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 10.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 70,
+        "start": 11.25,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 70,
+        "start": 11.71875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 11.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 12.5,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 67,
+        "start": 13.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 65,
+        "start": 13.75,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      }
+    ],
+    "bpm": 96.0,
+    "time_signature": [
+      3,
+      4
+    ],
+    "track_names": [
+      "Мелодия"
+    ],
+    "difficulty": 1,
+    "composer": "",
+    "work": "С днём рождения",
+    "description": "Подсказки пальцев — один из вариантов аппликатуры. Разучивайте короткими фразами.",
+    "source": "Собственная учебная аранжировка Clavunora",
+    "tempo_map": []
+  },
+  "birthday-bass": {
+    "title": "С днём рождения · с басом",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 41,
+        "start": 0,
+        "duration": 1.5,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 0.46875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 0.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 1.25,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 65,
+        "start": 1.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 64,
+        "start": 2.5,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 60,
+        "start": 3.75,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 48,
+        "start": 3.75,
+        "duration": 1.5,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 4.21875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 4.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 5.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 67,
+        "start": 5.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 65,
+        "start": 6.25,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 60,
+        "start": 7.5,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 41,
+        "start": 7.5,
+        "duration": 1.5,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 60,
+        "start": 7.96875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 72,
+        "start": 8.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 8.75,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 9.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 64,
+        "start": 10.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 10.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 70,
+        "start": 11.25,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 46,
+        "start": 11.25,
+        "duration": 1.5,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 2
+      },
+      {
+        "pitch": 70,
+        "start": 11.71875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 11.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 12.5,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 67,
+        "start": 13.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 65,
+        "start": 13.75,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      }
+    ],
+    "bpm": 96.0,
+    "time_signature": [
+      3,
+      4
+    ],
+    "track_names": [
+      "Правая",
+      "Левая"
+    ],
+    "difficulty": 3,
+    "composer": "",
+    "work": "С днём рождения",
+    "description": "Подсказки пальцев — один из вариантов аппликатуры. Разучивайте короткими фразами.",
+    "source": "Собственная учебная аранжировка Clavunora",
+    "tempo_map": []
+  },
+  "birthday-chords": {
+    "title": "С днём рождения · с аккордами",
+    "notes": [
+      {
+        "pitch": 60,
+        "start": 0.0,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 41,
+        "start": 0,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 45,
+        "start": 0,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 48,
+        "start": 0,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 0.46875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 0.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 1.25,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 65,
+        "start": 1.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 64,
+        "start": 2.5,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 60,
+        "start": 3.75,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 48,
+        "start": 3.75,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 52,
+        "start": 3.75,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 55,
+        "start": 3.75,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 4.21875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 4.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 60,
+        "start": 5.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 67,
+        "start": 5.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 65,
+        "start": 6.25,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 60,
+        "start": 7.5,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 41,
+        "start": 7.5,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 45,
+        "start": 7.5,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 48,
+        "start": 7.5,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 60,
+        "start": 7.96875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 72,
+        "start": 8.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 8.75,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 9.375,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 64,
+        "start": 10.0,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 1
+      },
+      {
+        "pitch": 62,
+        "start": 10.625,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 70,
+        "start": 11.25,
+        "duration": 0.421875,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 46,
+        "start": 11.25,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 5
+      },
+      {
+        "pitch": 50,
+        "start": 11.25,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 3
+      },
+      {
+        "pitch": 53,
+        "start": 11.25,
+        "duration": 1.4,
+        "velocity": 88,
+        "track": 1,
+        "channel": 0,
+        "hand": "L",
+        "finger": 1
+      },
+      {
+        "pitch": 70,
+        "start": 11.71875,
+        "duration": 0.140625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 5
+      },
+      {
+        "pitch": 69,
+        "start": 11.875,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 4
+      },
+      {
+        "pitch": 65,
+        "start": 12.5,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      },
+      {
+        "pitch": 67,
+        "start": 13.125,
+        "duration": 0.5625,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 3
+      },
+      {
+        "pitch": 65,
+        "start": 13.75,
+        "duration": 1.125,
+        "velocity": 88,
+        "track": 0,
+        "channel": 0,
+        "hand": "R",
+        "finger": 2
+      }
+    ],
+    "bpm": 96.0,
+    "time_signature": [
+      3,
+      4
+    ],
+    "track_names": [
+      "Правая",
+      "Левая"
+    ],
+    "difficulty": 3,
+    "composer": "",
+    "work": "С днём рождения",
+    "description": "Подсказки пальцев — один из вариантов аппликатуры. Разучивайте короткими фразами.",
+    "source": "Собственная учебная аранжировка Clavunora",
+    "tempo_map": []
+  }
+}

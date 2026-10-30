@@ -1,0 +1,808 @@
+{
+  "version": 1,
+  "entries": [
+    {
+      "number": 1,
+      "id": "birthday-melody",
+      "title": "«С днём рождения» / Happy Birthday — простая мелодия; произведение уже есть в приложении",
+      "difficulty": 1,
+      "status": "existing"
+    },
+    {
+      "number": 2,
+      "id": "repertoire-002",
+      "title": "«Мерцай, звёздочка» / Twinkle, Twinkle, Little Star — традиционная французская мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-002/score.json"
+    },
+    {
+      "number": 3,
+      "id": "repertoire-003",
+      "title": "«Братец Жак» / Frère Jacques — французская народная мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-003/score.json"
+    },
+    {
+      "number": 4,
+      "id": "repertoire-004",
+      "title": "Mary Had a Little Lamb — традиционная детская мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-004/score.json"
+    },
+    {
+      "number": 5,
+      "id": "repertoire-005",
+      "title": "Hot Cross Buns — традиционная английская мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-005/score.json"
+    },
+    {
+      "number": 6,
+      "id": "repertoire-006",
+      "title": "Row, Row, Row Your Boat — традиционная детская песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-006/score.json"
+    },
+    {
+      "number": 7,
+      "id": "repertoire-007",
+      "title": "London Bridge Is Falling Down — английская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-007/score.json"
+    },
+    {
+      "number": 8,
+      "id": "repertoire-008",
+      "title": "Au clair de la lune — французская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-008/score.json"
+    },
+    {
+      "number": 9,
+      "id": "repertoire-009",
+      "title": "Alouette — франкоканадская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-009/score.json"
+    },
+    {
+      "number": 10,
+      "id": "repertoire-010",
+      "title": "Sur le pont d’Avignon — французская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-010/score.json"
+    },
+    {
+      "number": 11,
+      "id": "repertoire-011",
+      "title": "Skip to My Lou — американская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-011/score.json"
+    },
+    {
+      "number": 12,
+      "id": "repertoire-012",
+      "title": "Yankee Doodle — традиционная мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-012/score.json"
+    },
+    {
+      "number": 13,
+      "id": "repertoire-013",
+      "title": "When the Saints Go Marching In — традиционная мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-013/score.json"
+    },
+    {
+      "number": 14,
+      "id": "repertoire-014",
+      "title": "«Бубенцы» / Jingle Bells — Джеймс Пьерпонт",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-014/score.json"
+    },
+    {
+      "number": 15,
+      "id": "repertoire-015",
+      "title": "«Ода к радости» — Бетховен, учебная версия темы из Девятой симфонии",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-015/score.json"
+    },
+    {
+      "number": 16,
+      "id": "repertoire-016",
+      "title": "«Во поле берёза стояла» — русская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-016/score.json"
+    },
+    {
+      "number": 17,
+      "id": "repertoire-017",
+      "title": "«Во саду ли, в огороде» — русская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-017/score.json"
+    },
+    {
+      "number": 18,
+      "id": "repertoire-018",
+      "title": "«Чижик-пыжик» — традиционная детская мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-018/score.json"
+    },
+    {
+      "number": 19,
+      "id": "repertoire-019",
+      "title": "«Ладушки» — традиционная детская мелодия",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-019/score.json"
+    },
+    {
+      "number": 20,
+      "id": "repertoire-020",
+      "title": "«Как под горкой, под горой» — русская народная песня",
+      "difficulty": 1,
+      "status": "playable-review-pending",
+      "score": "repertoire-020/score.json"
+    },
+    {
+      "number": 21,
+      "id": "repertoire-021",
+      "title": "Amazing Grace — традиционная мелодия New Britain",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-021/score.json"
+    },
+    {
+      "number": 22,
+      "id": "repertoire-022",
+      "title": "Greensleeves — традиционная английская мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-022/score.json"
+    },
+    {
+      "number": 23,
+      "id": "repertoire-023",
+      "title": "Scarborough Fair — традиционная английская мелодия, собственная обработка",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-023/score.json"
+    },
+    {
+      "number": 24,
+      "id": "repertoire-024",
+      "title": "Auld Lang Syne — традиционная шотландская мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-024/score.json"
+    },
+    {
+      "number": 25,
+      "id": "repertoire-025",
+      "title": "Londonderry Air / Danny Boy — традиционная ирландская мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-025/score.json"
+    },
+    {
+      "number": 26,
+      "id": "repertoire-026",
+      "title": "Oh! Susanna — Стивен Фостер",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-026/score.json"
+    },
+    {
+      "number": 27,
+      "id": "repertoire-027",
+      "title": "Camptown Races — Стивен Фостер",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-027/score.json"
+    },
+    {
+      "number": 28,
+      "id": "repertoire-028",
+      "title": "My Bonnie Lies over the Ocean — традиционная песня",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-028/score.json"
+    },
+    {
+      "number": 29,
+      "id": "repertoire-029",
+      "title": "Home on the Range — Дэниел Келли",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-029/score.json"
+    },
+    {
+      "number": 30,
+      "id": "repertoire-030",
+      "title": "«Тихая ночь» / Stille Nacht — Франц Грубер",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-030/score.json"
+    },
+    {
+      "number": 31,
+      "id": "repertoire-031",
+      "title": "We Wish You a Merry Christmas — традиционная рождественская песня",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-031/score.json"
+    },
+    {
+      "number": 32,
+      "id": "repertoire-032",
+      "title": "Deck the Halls — традиционная валлийская мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-032/score.json"
+    },
+    {
+      "number": 33,
+      "id": "repertoire-033",
+      "title": "O Tannenbaum — традиционная немецкая мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-033/score.json"
+    },
+    {
+      "number": 34,
+      "id": "repertoire-034",
+      "title": "«Колыбельная», op. 49 № 4 — Брамс",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-034/score.json"
+    },
+    {
+      "number": 35,
+      "id": "repertoire-035",
+      "title": "«Колыбельная», D 498 — Шуберт",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-035/score.json"
+    },
+    {
+      "number": 36,
+      "id": "repertoire-036",
+      "title": "«Калинка» — Иван Ларионов",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-036/score.json"
+    },
+    {
+      "number": 37,
+      "id": "repertoire-037",
+      "title": "«Коробейники» — традиционная мелодия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-037/score.json"
+    },
+    {
+      "number": 38,
+      "id": "repertoire-038",
+      "title": "«Светит месяц» — русская народная песня",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-038/score.json"
+    },
+    {
+      "number": 39,
+      "id": "repertoire-039",
+      "title": "«Ах вы, сени, мои сени» — русская народная песня",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-039/score.json"
+    },
+    {
+      "number": 40,
+      "id": "repertoire-040",
+      "title": "«Марш Радецкого», op. 228 — Иоганн Штраус-отец, облегчённая фортепианная версия",
+      "difficulty": 2,
+      "status": "playable-review-pending",
+      "score": "repertoire-040/score.json"
+    },
+    {
+      "number": 41,
+      "id": "repertoire-041",
+      "title": "Менуэт соль мажор, BWV Anh. 114 — Кристиан Петцольд",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-041/score.json"
+    },
+    {
+      "number": 42,
+      "id": "repertoire-042",
+      "title": "Менуэт соль минор, BWV Anh. 115 — Кристиан Петцольд",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-042/score.json"
+    },
+    {
+      "number": 43,
+      "id": "repertoire-043",
+      "title": "Прелюдия до мажор, BWV 846 — И. С. Бах",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-043/score.json"
+    },
+    {
+      "number": 44,
+      "id": "repertoire-044",
+      "title": "Маленькая прелюдия до мажор, BWV 939 — И. С. Бах",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-044/score.json"
+    },
+    {
+      "number": 45,
+      "id": "repertoire-045",
+      "title": "Прелюдия до минор, BWV 999 — И. С. Бах, клавишная версия",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "note": "Найденная редакция оказалась гитарной в ре миноре, нужна клавишная в до миноре.",
+      "score": "repertoire-045/score.json"
+    },
+    {
+      "number": 46,
+      "id": "repertoire-046",
+      "title": "Сонатина до мажор, op. 36 № 1, I часть — Клементи",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-046/score.json"
+    },
+    {
+      "number": 47,
+      "id": "repertoire-047",
+      "title": "Сонатина до мажор, op. 55 № 1, I часть — Кулау",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-047/score.json"
+    },
+    {
+      "number": 48,
+      "id": "repertoire-048",
+      "title": "Сонатина соль мажор, op. 168 № 2, I часть — Диабелли",
+      "difficulty": 3,
+      "status": "rights-pending",
+      "distribution": "review-required",
+      "reason": "Редакция временно недоступна: разрешение на распространение не подтверждено."
+    },
+    {
+      "number": 49,
+      "id": "repertoire-049",
+      "title": "«Арабеска», op. 100 № 2 — Бургмюллер",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-049/score.json"
+    },
+    {
+      "number": 50,
+      "id": "repertoire-050",
+      "title": "«Пастораль», op. 100 № 3 — Бургмюллер",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-050/score.json"
+    },
+    {
+      "number": 51,
+      "id": "repertoire-051",
+      "title": "«Баллада», op. 100 № 15 — Бургмюллер",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-051/score.json"
+    },
+    {
+      "number": 52,
+      "id": "repertoire-052",
+      "title": "«Мелодия», op. 68 № 1 — Шуман",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-052/score.json"
+    },
+    {
+      "number": 53,
+      "id": "repertoire-053",
+      "title": "«Весёлый крестьянин», op. 68 № 10 — Шуман",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-053/score.json"
+    },
+    {
+      "number": 54,
+      "id": "repertoire-054",
+      "title": "«Смелый наездник», op. 68 № 8 — Шуман",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-054/score.json"
+    },
+    {
+      "number": 55,
+      "id": "repertoire-055",
+      "title": "«Утренняя молитва», op. 39 № 1 — Чайковский",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-055/score.json"
+    },
+    {
+      "number": 56,
+      "id": "repertoire-056",
+      "title": "«Сладкая грёза», op. 39 № 21 — Чайковский",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-056/score.json"
+    },
+    {
+      "number": 57,
+      "id": "repertoire-057",
+      "title": "«Старинная французская песенка», op. 39 № 16 — Чайковский",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-057/score.json"
+    },
+    {
+      "number": 58,
+      "id": "repertoire-058",
+      "title": "«Болезнь куклы», op. 39 № 6 — Чайковский",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-058/score.json"
+    },
+    {
+      "number": 59,
+      "id": "repertoire-059",
+      "title": "«Ариетта», op. 12 № 1 — Григ",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-059/score.json"
+    },
+    {
+      "number": 60,
+      "id": "repertoire-060",
+      "title": "Гимнопедия № 1 — Эрик Сати",
+      "difficulty": 3,
+      "status": "playable-review-pending",
+      "score": "repertoire-060/score.json"
+    },
+    {
+      "number": 61,
+      "id": "repertoire-061",
+      "title": "«К Элизе», WoO 59 — Бетховен, полная пьеса",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-061/score.json"
+    },
+    {
+      "number": 62,
+      "id": "repertoire-062",
+      "title": "«Лунная соната», op. 27 № 2, I часть — Бетховен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-062/score.json"
+    },
+    {
+      "number": 63,
+      "id": "repertoire-063",
+      "title": "«Патетическая соната», op. 13, II часть — Бетховен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-063/score.json"
+    },
+    {
+      "number": 64,
+      "id": "repertoire-064",
+      "title": "Соната до мажор, K. 545, I часть — Моцарт",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-064/score.json"
+    },
+    {
+      "number": 65,
+      "id": "repertoire-065",
+      "title": "«Турецкое рондо», K. 331, III часть — Моцарт",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-065/score.json"
+    },
+    {
+      "number": 66,
+      "id": "repertoire-066",
+      "title": "Инвенция до мажор, BWV 772 — И. С. Бах",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-066/score.json"
+    },
+    {
+      "number": 67,
+      "id": "repertoire-067",
+      "title": "Инвенция фа мажор, BWV 779 — И. С. Бах",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-067/score.json"
+    },
+    {
+      "number": 68,
+      "id": "repertoire-068",
+      "title": "The Entertainer — Скотт Джоплин",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-068/score.json"
+    },
+    {
+      "number": 69,
+      "id": "repertoire-069",
+      "title": "Прелюдия ми минор, op. 28 № 4 — Шопен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-069/score.json"
+    },
+    {
+      "number": 70,
+      "id": "repertoire-070",
+      "title": "Прелюдия си минор, op. 28 № 6 — Шопен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-070/score.json"
+    },
+    {
+      "number": 71,
+      "id": "repertoire-071",
+      "title": "Вальс ля минор, B. 150 — Шопен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-071/score.json"
+    },
+    {
+      "number": 72,
+      "id": "repertoire-072",
+      "title": "Ноктюрн ми-бемоль мажор, op. 9 № 2 — Шопен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-072/score.json"
+    },
+    {
+      "number": 73,
+      "id": "repertoire-073",
+      "title": "Вальс до-диез минор, op. 64 № 2 — Шопен",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-073/score.json"
+    },
+    {
+      "number": 74,
+      "id": "repertoire-074",
+      "title": "«Грёзы», op. 15 № 7 — Шуман",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-074/score.json"
+    },
+    {
+      "number": 75,
+      "id": "repertoire-075",
+      "title": "«Песня без слов», op. 19b № 1 — Мендельсон",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-075/score.json"
+    },
+    {
+      "number": 76,
+      "id": "repertoire-076",
+      "title": "«Весенняя песня», op. 62 № 6 — Мендельсон",
+      "difficulty": 4,
+      "status": "rights-pending",
+      "distribution": "review-required",
+      "reason": "Редакция временно недоступна: разрешение на распространение не подтверждено."
+    },
+    {
+      "number": 77,
+      "id": "repertoire-077",
+      "title": "«К весне», op. 43 № 6 — Григ",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-077/score.json"
+    },
+    {
+      "number": 78,
+      "id": "repertoire-078",
+      "title": "«Июнь. Баркарола», op. 37a № 6 — Чайковский",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-078/score.json"
+    },
+    {
+      "number": 79,
+      "id": "repertoire-079",
+      "title": "Арабеска № 1 — Дебюсси",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-079/score.json"
+    },
+    {
+      "number": 80,
+      "id": "repertoire-080",
+      "title": "«Лунный свет» / Clair de lune — Дебюсси",
+      "difficulty": 4,
+      "status": "playable-review-pending",
+      "score": "repertoire-080/score.json"
+    },
+    {
+      "number": 81,
+      "id": "repertoire-081",
+      "title": "Фантазия-экспромт, op. 66 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-081/score.json"
+    },
+    {
+      "number": 82,
+      "id": "repertoire-082",
+      "title": "Баллада № 1 соль минор, op. 23 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-082/score.json"
+    },
+    {
+      "number": 83,
+      "id": "repertoire-083",
+      "title": "Скерцо № 2 си-бемоль минор, op. 31 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-083/score.json"
+    },
+    {
+      "number": 84,
+      "id": "repertoire-084",
+      "title": "Этюд до-диез минор, op. 10 № 4 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-084/score.json"
+    },
+    {
+      "number": 85,
+      "id": "repertoire-085",
+      "title": "«Революционный этюд», op. 10 № 12 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-085/score.json"
+    },
+    {
+      "number": 86,
+      "id": "repertoire-086",
+      "title": "«Зимний ветер», op. 25 № 11 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-086/score.json"
+    },
+    {
+      "number": 87,
+      "id": "repertoire-087",
+      "title": "«Героический полонез», op. 53 — Шопен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-087/score.json"
+    },
+    {
+      "number": 88,
+      "id": "repertoire-088",
+      "title": "«Лунная соната», op. 27 № 2, III часть — Бетховен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-088/score.json"
+    },
+    {
+      "number": 89,
+      "id": "repertoire-089",
+      "title": "«Патетическая соната», op. 13, I часть — Бетховен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-089/score.json"
+    },
+    {
+      "number": 90,
+      "id": "repertoire-090",
+      "title": "«Аппассионата», op. 57, III часть — Бетховен",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-090/score.json"
+    },
+    {
+      "number": 91,
+      "id": "repertoire-091",
+      "title": "Соната ре мажор, K. 576, I часть — Моцарт",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-091/score.json"
+    },
+    {
+      "number": 92,
+      "id": "repertoire-092",
+      "title": "Хроматическая фантазия и фуга, BWV 903 — И. С. Бах",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-092/score.json"
+    },
+    {
+      "number": 93,
+      "id": "repertoire-093",
+      "title": "Итальянский концерт, BWV 971, III часть — И. С. Бах",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-093/score.json"
+    },
+    {
+      "number": 94,
+      "id": "repertoire-094",
+      "title": "«Грёзы любви» № 3, S. 541 — Лист",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-094/score.json"
+    },
+    {
+      "number": 95,
+      "id": "repertoire-095",
+      "title": "Un sospiro, S. 144 № 3 — Лист",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-095/score.json",
+      "distribution": "licensed"
+    },
+    {
+      "number": 96,
+      "id": "repertoire-096",
+      "title": "«Кампанелла», S. 141 № 3 — Лист",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-096/score.json"
+    },
+    {
+      "number": 97,
+      "id": "repertoire-097",
+      "title": "«Сады под дождём» / Jardins sous la pluie — Дебюсси",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-097/score.json"
+    },
+    {
+      "number": 98,
+      "id": "repertoire-098",
+      "title": "«Остров радости» / L’Isle joyeuse — Дебюсси",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-098/score.json"
+    },
+    {
+      "number": 99,
+      "id": "repertoire-099",
+      "title": "Прелюдия до-диез минор, op. 3 № 2 — Рахманинов",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-099/score.json"
+    },
+    {
+      "number": 100,
+      "id": "repertoire-100",
+      "title": "Прелюдия соль минор, op. 23 № 5 — Рахманинов",
+      "difficulty": 5,
+      "status": "playable-review-pending",
+      "score": "repertoire-100/score.json"
+    }
+  ]
+}

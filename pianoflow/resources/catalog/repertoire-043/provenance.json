@@ -1,0 +1,27 @@
+{
+  "id": 43,
+  "path": "ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV846/wtk1-prelude1/wtk1-prelude1.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Public Domain"
+    ],
+    "maintainer": [
+      "Tobias Erbsland"
+    ],
+    "composer": [
+      "Johann Sebastian Bach (1685-1750)"
+    ],
+    "title": [
+      "Das Wohltemperierte Clavier I"
+    ],
+    "footer": [
+      "Mutopia-2011/09/12-5"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

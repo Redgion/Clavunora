@@ -1,0 +1,13 @@
+{
+  "id": 94,
+  "url": "https://noctavepiano.com/en/sheet-music/liszt-reve-d-amour-3/",
+  "file": "https://noctavepiano.com/partitions/liszt-reve-d-amour-3/liszt-reve-d-amour-3.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "edition": "Source of the edition Transcription MuseScore (CC0) Licence of the files CC0 1.0 Noctave’s changes a few notes adapted from another edition (details below) Edition notes: the source, in full From the catalogue licences of Noctave, in French. Transcription publiée sur MuseScore ( https://musescore.com/score/1578986 , MuseScore 2.1.0, 2017) sous CC0 1.0 (licence affichée sur la page, vérifiée par le porteur du projet le 2026-10-08) ; source conservée dans catalog/musescore/sources/liszt-reve-d-amour-3.mxl , préparée par catalog/musescore/prepare.py (fiche pieces/liszt-reve-d-amour-3.json ) ; 4 notes corrigées d'après l'édition Kistner (IMSLP, lot 2 : voir « Relecture contre une édition ») ",
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

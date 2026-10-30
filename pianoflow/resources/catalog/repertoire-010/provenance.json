@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/3/28/QmdkjCr2uUUhifbxjeFFQoEjJz8pbv18KmevPJtsud7xgM.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #4556762 · Sur le pont d'Avignon",
+  "source_score": "https://musescore.com/score/4556762",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

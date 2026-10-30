@@ -1,0 +1,24 @@
+{
+  "id": 62,
+  "path": "ftp/BeethovenLv/O27/moonlight/moonlight-lys/moonlight1-a4.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O27/moonlight/moonlight-mids.zip",
+  "fields": {
+    "license": [],
+    "copyright": [],
+    "maintainer": [
+      "Stewart Holmes"
+    ],
+    "composer": [
+      "Ludwig van Beethoven"
+    ],
+    "title": [
+      "Sonata No. 14, 'Moonlight'"
+    ],
+    "footer": [
+      "Mutopia-2007/02/11-276"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 2.5",
+  "changes": "Timed notes and staff-based hands",
+  "review": "pending"
+}

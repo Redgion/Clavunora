@@ -1,0 +1,27 @@
+{
+  "id": 66,
+  "path": "ftp/BachJS/BWV772/bach-invention-01/bach-invention-01.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV772/bach-invention-01/bach-invention-01.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Creative Commons Attribution-ShareAlike 3.0"
+    ],
+    "maintainer": [
+      "jeff covey"
+    ],
+    "composer": [
+      "Johann Sebastian Bach (1685-1750)"
+    ],
+    "title": [
+      "Invention 1"
+    ],
+    "footer": [
+      "Mutopia-2008/06/15-40"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

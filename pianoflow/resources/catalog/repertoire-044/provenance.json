@@ -1,0 +1,27 @@
+{
+  "id": 44,
+  "path": "ftp/BachJS/BWV939/bwv-939/bwv-939.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BachJS/BWV939/bwv-939/bwv-939.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Creative Commons Attribution-ShareAlike 3.0"
+    ],
+    "maintainer": [
+      "Hajo Dezelski"
+    ],
+    "composer": [
+      "Johann Sebastian Bach (165-1750)"
+    ],
+    "title": [
+      "Praeludium Nr. 1"
+    ],
+    "footer": [
+      "Mutopia-2008/11/06-1593"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

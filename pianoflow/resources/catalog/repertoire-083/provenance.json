@@ -1,0 +1,15 @@
+{
+  "id": 83,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/17/37/QmZPydoNzGhD9TTqqsZ4h4f36eR6z2bcokeNu7pG5hUScE.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #3989841 · Scherzo No.2 (F.Chopin Op.31)",
+  "source_score": "https://musescore.com/score/3989841",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 48,
+  "review": "pending"
+}

@@ -1,0 +1,16 @@
+{
+  "id": 27,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/4/26/QmejeAvp7mJcY262v7q7B9VwugC2xJh8jJA2rvj2tbcGHX.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #4550015 · Stephen Foster - Camptown Races",
+  "source_score": "https://musescore.com/score/4550015",
+  "license_conflict": false,
+  "linear_form": true,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

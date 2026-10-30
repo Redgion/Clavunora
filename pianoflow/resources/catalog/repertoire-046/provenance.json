@@ -1,0 +1,13 @@
+{
+  "id": 46,
+  "url": "https://noctavepiano.com/en/sheet-music/clementi-sonatine-op36-1-1/",
+  "file": "https://noctavepiano.com/partitions/clementi-sonatine-op36-1-1/clementi-sonatine-op36-1-1.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/",
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "edition": "Source of the edition Mutopia Project (Brian D. Rude), d’après Sonatina Album, G. Schirmer (1893) Licence of the files CC0 1.0 Noctave’s changes no note changed from the source Edition notes: the source, in full From the catalogue licences of Noctave, in French. Convertie pour Noctave depuis la source LilyPond de l'édition du Mutopia Project saisie par Brian D. Rude d'après Sonatina Album, G. Schirmer (1893), placée dans le domaine public par son auteur ",
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

@@ -1,0 +1,25 @@
+{
+  "id": 60,
+  "path": "ftp/SatieE/gymnopedie_1/gymnopedie_1.ly",
+  "url": "https://www.mutopiaproject.org/ftp/SatieE/gymnopedie_1/gymnopedie_1.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Evin Robertson"
+    ],
+    "composer": [
+      "Erik Satie"
+    ],
+    "title": [],
+    "footer": [
+      "Mutopia-2014/12/14-37"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

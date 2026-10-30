@@ -1,0 +1,27 @@
+{
+  "id": 61,
+  "path": "ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/WoO59/fur_Elise_WoO59/fur_Elise_WoO59.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Stelios Samelis"
+    ],
+    "composer": [
+      "Ludwig van Beethoven"
+    ],
+    "title": [
+      "Für Elise"
+    ],
+    "footer": [
+      "Mutopia-2015/08/18-931"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

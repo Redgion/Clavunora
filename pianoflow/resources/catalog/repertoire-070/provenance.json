@@ -1,0 +1,27 @@
+{
+  "id": 70,
+  "path": "ftp/ChopinFF/O28/Chop-28-6/Chop-28-6-lys/chopin_prelude_op28_no6.ly",
+  "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O28/Chop-28-6/Chop-28-6.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Magnus Lewis-Smith"
+    ],
+    "composer": [
+      "Frederic Chopin (1810-1849)"
+    ],
+    "title": [
+      "Prelude"
+    ],
+    "footer": [
+      "Mutopia-2015/01/17-469"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

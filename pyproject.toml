@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clavunora"
+version = "0.4.0rc3"
+description = "Clavunora — offline piano practice for desktop and Android"
+license = "GPL-3.0-only"
+license-files = ["LICENSE", "COPYRIGHT", "THIRD_PARTY_NOTICES.md", "AI_USAGE.md"]
+requires-python = ">=3.12"
+dependencies = ["PySide6>=6.8,<7", "mido>=1.3,<2"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+desktop = ["python-rtmidi>=1.5,<2"]
+catalog = ["music21>=9,<10"]
+build = ["pyinstaller>=6.16,<7", "build>=1.2,<2"]
+
+[project.scripts]
+clavunora = "pianoflow.app:main"
+pianoflow = "pianoflow.app:main"
+
+[tool.setuptools.packages.find]
+include = ["pianoflow*"]
+
+[tool.setuptools.package-data]
+pianoflow = ["resources/catalog/*.json", "resources/catalog/*/*", "resources/licenses/*", "resources/icons/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

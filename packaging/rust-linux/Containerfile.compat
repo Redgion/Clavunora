@@ -1,0 +1,6 @@
+# Build and test against glibc 2.36, rather than the developer host's libc.
+FROM docker.io/library/debian:12
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential pkg-config libasound2-dev binutils \
+    libxkbcommon0 libxkbcommon-x11-0 libgl1 libegl1 libgl1-mesa-dri libxcursor1 libxrandr2 libxi6 \
+    xvfb xauth

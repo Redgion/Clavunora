@@ -1,0 +1,137 @@
+name: Clavunora Rust desktop candidates
+on:
+  workflow_dispatch:
+  push:
+    branches: ['codex/release-1.0*']
+    paths: ['rust/**', 'pianoflow/resources/**', 'assets/**', 'scripts/**', 'tests/**', 'packaging/**', 'docs/**', 'LICENSE', 'COPYRIGHT', 'THIRD_PARTY_NOTICES.md', 'AI_USAGE.md', 'README.md', 'CHANGELOG.md', '.github/workflows/rust-desktop.yml']
+permissions:
+  contents: read
+concurrency:
+  group: rust-desktop-${{ github.ref }}
+  cancel-in-progress: true
+env:
+  CARGO_TERM_COLOR: always
+  PYTHONUTF8: '1'
+jobs:
+  source:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rust compiler
+        run: rustup toolchain install 1.99.1 --profile minimal && rustup default 1.99.1
+      - run: cargo fetch --locked --manifest-path rust/Cargo.toml
+      - run: python scripts/package_rust_source.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-corresponding-source
+          path: dist/*-source.tar.gz*
+          if-no-files-found: error
+          retention-days: 30
+  desktop:
+    needs: source
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: ubuntu-22.04
+            name: Linux-x86_64
+          - os: windows-2025
+            name: Windows-x64
+          - os: macos-15
+            name: macOS-arm64
+          - os: macos-15-intel
+            name: macOS-x86_64
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    env:
+      MACOSX_DEPLOYMENT_TARGET: '11.0'
+      CARGO_BUILD_JOBS: '4'
+      RUSTFLAGS: ${{ matrix.os == 'windows-2025' && '-C target-feature=+crt-static' || '' }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Linux build and GUI dependencies
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libasound2-dev libxkbcommon-dev libxkbcommon-x11-0 libegl1 libgl1-mesa-dri xvfb ripgrep
+      - name: Rust compiler and checks
+        run: rustup toolchain install 1.99.1 --profile minimal --component clippy --component rustfmt && rustup default 1.99.1
+      - name: Restore native compiler cache
+        id: native-cache
+        uses: actions/cache/restore@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            rust/target
+          key: desktop-${{ runner.os }}-${{ runner.arch }}-1.99.1-${{ hashFiles('rust/Cargo.lock') }}-${{ github.sha }}
+          restore-keys: |
+            desktop-${{ runner.os }}-${{ runner.arch }}-1.99.1-${{ hashFiles('rust/Cargo.lock') }}-
+            desktop-${{ runner.os }}-${{ runner.arch }}-1.99.1-
+      - run: cargo fetch --locked --manifest-path rust/Cargo.toml
+      - name: Remove build-machine paths from executable diagnostics
+        shell: python
+        run: |
+          import os
+          flags = ['-C', 'target-feature=+crt-static'] if os.name == 'nt' else []
+          for source, replacement in [(os.path.expanduser('~'), '~'), (os.environ['GITHUB_WORKSPACE'], '~/Clavunora')]:
+              flags.append('--remap-path-prefix=' + source + '=' + replacement)
+          with open(os.environ['GITHUB_ENV'], 'a', encoding='utf-8') as out:
+              out.write('CARGO_ENCODED_RUSTFLAGS=' + '\x1f'.join(flags) + '\n')
+      - run: cargo fmt --manifest-path rust/Cargo.toml --all -- --check
+      - run: cargo test --locked --manifest-path rust/Cargo.toml --workspace -- --test-threads=2
+      - run: cargo clippy --locked --manifest-path rust/Cargo.toml --workspace --all-targets -- -D warnings
+      - run: cargo build --locked --manifest-path rust/Cargo.toml --release -p clavunora-rust
+      - uses: actions/download-artifact@v4
+        with:
+          name: Clavunora-corresponding-source
+          path: dist
+      - name: Linux portable package
+        if: runner.os == 'Linux'
+        env:
+          CLAVUNORA_SKIP_SOURCE: '1'
+        run: |
+          scripts/package_rust_linux.sh "$PWD/rust/target/release/clavunora-rust"
+          LIBGL_ALWAYS_SOFTWARE=1 xvfb-run -a dist/Clavunora-Rust-preview/clavunora-rust --capture "$PWD/build/release-sheet.png" --capture-page sheet
+          python -m unittest discover -s tests -p test_desktop_release.py -v
+          python -m unittest discover -s tests -p test_release_privacy.py -v
+      - name: Windows portable package
+        if: runner.os == 'Windows'
+        run: python scripts/package_rust_desktop.py --binary rust/target/release/clavunora-rust.exe --source "$(find dist -name '*-source.tar.gz' -print -quit)"
+      - name: Windows setup, upgrade and uninstall
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: ./scripts/check_windows_installer.ps1
+      - name: macOS app, ZIP and disk image
+        if: runner.os == 'macOS'
+        run: python scripts/package_rust_desktop.py --binary rust/target/release/clavunora-rust --source "$(find dist -name '*-source.tar.gz' -print -quit)"
+      - name: Save native compiler cache
+        if: always() && steps.native-cache.outputs.cache-hit != 'true'
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/git
+            rust/target
+          key: ${{ steps.native-cache.outputs.cache-primary-key }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-${{ matrix.name }}
+          path: |
+            dist/*linux*.tar.gz
+            dist/*windows*.zip
+            dist/*setup.exe
+            dist/*macos*.zip
+            dist/*macos*.dmg
+            dist/*.sha256
+            build/release-sheet.png
+          if-no-files-found: error
+          retention-days: 30

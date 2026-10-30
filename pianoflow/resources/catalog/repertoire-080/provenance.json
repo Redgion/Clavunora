@@ -1,0 +1,27 @@
+{
+  "id": 80,
+  "path": "ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.ly",
+  "url": "https://www.mutopiaproject.org/ftp/DebussyC/L75/debussy_Ste_Bergamesq_Clair/debussy_Ste_Bergamesq_Clair.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Keith OHara"
+    ],
+    "composer": [
+      "Claude Debussy"
+    ],
+    "title": [
+      "Suite Bergamasque – Clair de Lune"
+    ],
+    "footer": [
+      "Mutopia-2010/12/21-1778"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

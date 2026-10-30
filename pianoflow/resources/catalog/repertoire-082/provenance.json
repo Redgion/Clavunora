@@ -1,0 +1,25 @@
+{
+  "id": 82,
+  "path": "ftp/ChopinFF/O23/chopin-op23-ballade-1/chopin-op23-ballade-1-lys/chopin-op23-ballade-1.ly",
+  "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O23/chopin-op23-ballade-1/chopin-op23-ballade-1.mid",
+  "fields": {
+    "license": [
+      "Creative Commons Attribution-ShareAlike 4.0"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Javier Ruiz-Alma"
+    ],
+    "composer": [],
+    "title": [
+      "Première Ballade."
+    ],
+    "footer": [
+      "Mutopia-2014/07/19-1959"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

@@ -1,0 +1,17 @@
+{
+  "id": 47,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/17/17/QmZebw69299pYc7Fqdd8xyUXETMoHumsgE1RNeNzdZgZrR.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #5314825 · Kuhlau: Sonatina Op. 55 No. 1",
+  "source_score": "https://musescore.com/score/5314825",
+  "license_conflict": false,
+  "movement_cutoff_beats": 248,
+  "boundary": "First movement ends after measure 62; second movement restarts measure 1, Vivace, original offset 248.",
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

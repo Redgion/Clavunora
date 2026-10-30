@@ -1,0 +1,5 @@
+# Keep source and resource hashes consistent on native build hosts.
+* text=auto eol=lf
+pianoflow/resources/** -text
+rust/crates/clavunora-app/assets/** -text
+packaging/rust-notices/** -text

@@ -1,0 +1,27 @@
+{
+  "id": 55,
+  "path": "ftp/TchaikovskyPI/O39/01MorningPrayer/01MorningPrayer.ly",
+  "url": "https://www.mutopiaproject.org/ftp/TchaikovskyPI/O39/01MorningPrayer/01MorningPrayer.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Rem Zolotykh"
+    ],
+    "composer": [
+      "P. I. Tchaikovsky"
+    ],
+    "title": [
+      "Morning Prayer"
+    ],
+    "footer": [
+      "Mutopia-2015/07/09-2032"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

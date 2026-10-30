@@ -1,0 +1,15 @@
+{
+  "id": 25,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/1/44/Qmbt8iaSN2PGLeES21WW8UHP9D69tbqR6uUxXgaFA7hzvg.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #4974770 · Traditional music - Danny Boy",
+  "source_score": "https://musescore.com/score/4974770",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

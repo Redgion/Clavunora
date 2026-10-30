@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=PianoFlow
+Comment=Обучение игре на цифровом пианино
+Exec=pianoflow
+Icon=audio-keyboard
+Terminal=false
+Categories=AudioVideo;Audio;Education;Music;
+StartupNotify=true

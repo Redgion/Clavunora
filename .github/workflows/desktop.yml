@@ -1,0 +1,31 @@
+name: Desktop packages
+on:
+  workflow_dispatch:
+  pull_request:
+    paths: ['pianoflow/**', 'tests/**', 'packaging/**', 'scripts/**', 'pyproject.toml', '.github/workflows/desktop.yml']
+permissions:
+  contents: read
+jobs:
+  package:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-22.04, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Linux Qt runtime libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libopengl0 libasound2 libxcb-cursor0 libpulse0 libxkbcommon0
+      - run: python -m pip install '.[desktop,dev,build]'
+      - run: python scripts/build_desktop.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-${{ runner.os }}
+          path: |
+            dist/*.zip
+            dist/*.tar.gz
+          if-no-files-found: error

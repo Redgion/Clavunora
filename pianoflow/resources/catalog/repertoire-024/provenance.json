@@ -1,0 +1,15 @@
+{
+  "id": 24,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/1/7/Qmb8dASMJEX7LJTCQpR5uwmM7gNR5V9HG9GhUpRf1qLmq1.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #5987539 · Auld lang syne G Major",
+  "source_score": "https://musescore.com/score/5987539",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

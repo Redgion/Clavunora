@@ -1,0 +1,14 @@
+{
+  "id": 91,
+  "url": "https://pianosoloist.app/songs/mozart-sonata-k576-1st",
+  "file": "https://pianosoloist.app/library/mozart-sonata-k576-1st.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "edition": "CC0 1.0 · source: PDMX #76993",
+  "provider": "Piano: Soloist / PDMX",
+  "internal_rights": [],
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 13,
+  "review": "pending"
+}

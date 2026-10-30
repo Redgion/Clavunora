@@ -1,0 +1,18 @@
+[workspace]
+members = ["crates/clavunora-core", "crates/clavunora-app"]
+resolver = "2"
+
+[workspace.package]
+version = "1.0.0-rc.1"
+edition = "2024"
+publish = false
+license = "GPL-3.0-only"
+
+[workspace.dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = { version = "1", features = ["float_roundtrip"] }
+anyhow = "1"
+
+[profile.release]
+opt-level = 2
+strip = true

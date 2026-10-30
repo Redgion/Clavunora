@@ -1,0 +1,13 @@
+{
+  "id": 97,
+  "url": "https://github.com/DCMLab/debussy_estampes/tree/7fff184fb6a24eaeb9923c69fe5ae058db92f29a",
+  "provider": "DCMLab",
+  "licenses": [
+    "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  ],
+  "edition": "Laneve, Schaerf, Cecchetti, Hentschel & Rohrmeier (2023), The Claude Debussy Solo Piano Corpus. doi:10.1057/s41599-023-01796-7",
+  "revision": "7fff184fb6a24eaeb9923c69fe5ae058db92f29a",
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 13,
+  "review": "pending"
+}

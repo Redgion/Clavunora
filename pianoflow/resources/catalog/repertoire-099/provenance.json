@@ -1,0 +1,26 @@
+{
+  "id": 99,
+  "path": "ftp/RachmaninoffS/O3/rach-prelude-op3-no2/rach-prelude-op3-no2.ly",
+  "url": "https://www.mutopiaproject.org/ftp/RachmaninoffS/O3/rach-prelude-op3-no2/rach-prelude-op3-no2.mid",
+  "fields": {
+    "license": [
+      "Creative Commons Attribution-ShareAlike 4.0",
+      "Creative Commons Attribution-ShareAlike 4.0"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Petro Kostandy"
+    ],
+    "composer": [],
+    "title": [
+      "Prelude in C# minor"
+    ],
+    "footer": [
+      "Mutopia-2015/07/09-2033"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

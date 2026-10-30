@@ -1,0 +1,27 @@
+{
+  "id": 63,
+  "path": "ftp/BeethovenLv/O13/pathetique-2/pathetique-2.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O13/pathetique-2/pathetique-2.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Public Domain"
+    ],
+    "maintainer": [
+      "Chris Sawer"
+    ],
+    "composer": [
+      "L. van Beethoven"
+    ],
+    "title": [
+      "Sonata No. 8 \\"
+    ],
+    "footer": [
+      "Mutopia-2011/10/25-295"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

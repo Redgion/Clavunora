@@ -1,0 +1,16 @@
+PianoFlow uses Qt/PySide6 and Shiboken, copyright The Qt Company Ltd. and contributors.
+Qt libraries remain dynamically linked; users may replace compatible library versions.
+Open-source Qt licensing: https://doc.qt.io/qt-6/licensing.html
+Corresponding Qt/PySide source releases: https://download.qt.io/official_releases/
+https://code.qt.io/cgit/pyside/pyside-setup.git/
+LGPL-3.0 and its accompanying GPL-3.0 text are included.
+
+The build records actual dependency versions and copies license files exposed by their distributions.
+Review the exact selected Qt modules and third-party notices before public distribution.
+This preview does not include a SoundFont or FluidSynth library.
+
+Music: every Mutopia edition has provenance.json, original MIDI and available LilyPond sources.
+Converted scores retain the source license (Public Domain or CC BY-SA, exact version in provenance).
+Changes: MIDI notes converted to seconds; staff-based hand labels added; no fingerings imported.
+Own educational arrangements explicitly labelled PianoFlow / CC0 are dedicated under CC0 1.0:
+https://creativecommons.org/publicdomain/zero/1.0/

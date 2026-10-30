@@ -1,0 +1,23 @@
+[package]
+name = "clavunora-core"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+rusqlite = { version = "0.41", features = ["bundled", "backup"] }
+sha2 = "0.10"
+getrandom = "0.4"
+quick-xml = "0.41"
+tempfile = "3"
+midly = { version = "0.5.3", default-features = false, features = ["std", "strict"] }
+
+[build-dependencies]
+serde_json.workspace = true
+
+[dev-dependencies]
+tempfile = "3"

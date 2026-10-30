@@ -1,0 +1,27 @@
+{
+  "id": 41,
+  "path": "ftp/BachJS/BWVAnh114/anna-magdalena-04/anna-magdalena-04.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BachJS/BWVAnh114/anna-magdalena-04/anna-magdalena-04.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Allen Garvin"
+    ],
+    "composer": [
+      "Johann Sebastian Bach (1685-1750)"
+    ],
+    "title": [
+      "Menuet in G"
+    ],
+    "footer": [
+      "Mutopia-2017/01/19-75"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

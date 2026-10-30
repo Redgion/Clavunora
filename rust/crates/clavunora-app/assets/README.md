@@ -1,0 +1,9 @@
+# Summer Aero assets
+
+`summer-lake.png` — original wallpaper generated using the built-in image_gen tool on 2026-10-28 for Clavunora. The image is embedded in the Rust binary. The UI uses a reduced, blurred copy only as a texture behind rounded glass panes. All controls, labels, icons and statistics are rendered by the application.
+
+Final generation prompt:
+
+> Use case: stylized-concept. Asset type: background wallpaper for Clavunora, a refined Windows Vista Aero / Frutiger Aero desktop piano learning app. Generate ONLY an original summer landscape wallpaper, absolutely NO interface, text, letters, logos, icons, windows, borders or watermarks. Wide 16:10 composition, beautifully detailed painterly-photorealistic digital matte painting. Peaceful clear turquoise alpine lake in midsummer, lush green forest and rolling green hills with distant rugged gray mountains completely free of snow, warm gentle late-afternoon sunlight and luminous blue cyan sky with soft white clouds. Soft green grass and a few small wildflowers around bottom corners, lake reflecting summer sky, distant sunlit stone village nestled on far green shore very small and subtle. Elegant nostalgic 2007 desktop wallpaper beauty, fresh hopeful and calm. Center and upper-center mostly open serene lake and sky with soft low-detail transitions to provide readable backdrop for floating glass panels. Lovely atmospheric depth, believable water reflections, no winter, no snow anywhere, no frozen water, no aurora, no cold moonlight, no dramatic busy foreground objects. Sophisticated not oversaturated, high quality crisp landscape. Single landscape wallpaper filling canvas.
+
+`brand-serif.ttf` — Liberation Serif Regular, from Fedora's liberation-serif-fonts package. See `FONT-LICENSE.txt` for the SIL Open Font License and copyright notices. Used for the Clavunora wordmark; remaining text uses egui's bundled fonts.

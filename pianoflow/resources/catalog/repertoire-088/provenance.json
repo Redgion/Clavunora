@@ -1,0 +1,21 @@
+{
+  "id": 88,
+  "path": "ftp/BeethovenLv/O27/moonlight/moonlight-lys/moonlight3-a4.ly",
+  "url": "https://www.mutopiaproject.org/ftp/BeethovenLv/O27/moonlight/moonlight-mids.zip",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Creative Commons Attribution-ShareAlike 2.5",
+      ""
+    ],
+    "maintainer": [
+      "Stewart Holmes"
+    ],
+    "composer": [],
+    "title": [],
+    "footer": []
+  },
+  "license": "Creative Commons Attribution-ShareAlike 2.5",
+  "changes": "Timed notes and staff-based hands",
+  "review": "pending"
+}

@@ -1,0 +1,11 @@
+{
+  "provider": "MAESTRO v3.0.0; Google LLC / International Piano-e-Competition (2011)",
+  "url": "https://magenta.withgoogle.com/datasets/maestro",
+  "license": "CC BY-NC-SA 4.0 — только некоммерческое использование; https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "distribution": "licensed",
+  "changes": "Полная запись исполнения Un sospiro. Сохранён живой ритм; это исполнительская MIDI-редакция, не нотная редакция с равномерной сеткой. Руки и пальцы отсутствуют в источнике; режим отдельных рук требует разметки. Педаль не воспроизводится.",
+  "review": "pending",
+  "sha256": "8b493e9b9603a48e5f18b53b89b9dadd57b20d6de84ad271dfd3580ac85ebf8e",
+  "source_member": "2011/MIDI-Unprocessed_04_R3_2011_MID--AUDIO_R3-D2_03_Track03_wav.midi",
+  "source_archive_sha256": "70470ee253295c8d2c71e6d9d4a815189e35c89624b76d22fce5a019d5dde12c"
+}

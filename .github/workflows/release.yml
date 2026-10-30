@@ -1,0 +1,119 @@
+name: Release packages
+on:
+  push:
+    branches: ['codex/release-0.4']
+    tags: ['v*']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  desktop:
+    if: "!startsWith(github.ref, 'refs/tags/')"
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-24.04, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Linux libraries
+        if: runner.os == 'Linux'
+        run: sudo apt-get update && sudo apt-get install -y libegl1 libopengl0 libasound2t64 libxcb-cursor0 libpulse0 libxkbcommon0 rpm
+      - run: python -m pip install '.[desktop,dev,build]'
+      - run: python scripts/build_desktop.py
+      - name: Linux installers
+        if: runner.os == 'Linux'
+        run: python scripts/build_linux_packages.py
+      - name: Windows installer and upgrade from PianoFlow
+        if: runner.os == 'Windows'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $version = python -c "from pianoflow import __version__; print(__version__)"
+          & "${env:ProgramFiles(x86)}\Inno Setup 6\ISCC.exe" "/DAppVersion=$version" packaging/windows/Clavunora.iss
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          $installer = (Get-ChildItem dist/*setup.exe).FullName
+          $target = Join-Path $env:RUNNER_TEMP 'Clavunora-install-check'
+          $legacy = Join-Path $env:RUNNER_TEMP 'PianoFlow-previous-installer'
+          gh release download v0.4.0-rc.1 --pattern '*setup.exe' --dir $legacy
+          if ($LASTEXITCODE -ne 0) { throw "Could not download the previous installer" }
+          $oldInstaller = (Get-ChildItem "$legacy/*setup.exe").FullName
+          $oldInstall = Start-Process $oldInstaller -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART', ('/DIR="' + $target + '"')) -Wait -PassThru
+          if ($oldInstall.ExitCode -ne 0) { throw "Previous installer failed" }
+          $dataFolder = Join-Path $env:APPDATA 'PianoFlow'
+          New-Item -ItemType Directory -Force $dataFolder | Out-Null
+          $sentinel = Join-Path $dataFolder 'upgrade-check.txt'
+          Set-Content $sentinel 'preserve-library-and-progress'
+          # The stable AppId must discover and reuse the previous directory.
+          $install = Start-Process $installer -ArgumentList @('/VERYSILENT', '/SUPPRESSMSGBOXES', '/NORESTART') -Wait -PassThru
+          if ($install.ExitCode -ne 0) { throw "Installer failed: $($install.ExitCode)" }
+          if (!(Test-Path (Join-Path $target 'Clavunora.exe'))) { throw "Upgrade changed the installation directory" }
+          if ((Get-Content $sentinel) -ne 'preserve-library-and-progress') { throw "Upgrade modified user data" }
+          $env:QT_QPA_PLATFORM = 'offscreen'
+          $check = Start-Process (Join-Path $target 'Clavunora.exe') -ArgumentList '--self-test' -Wait -PassThru
+          if ($check.ExitCode -ne 0) { throw "Installed application self-test failed" }
+          Start-Process (Join-Path $target 'unins000.exe') -ArgumentList '/VERYSILENT', '/SUPPRESSMSGBOXES' -Wait
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-${{ runner.os }}
+          path: |
+            dist/*.zip
+            dist/*.tar.gz
+            dist/*setup.exe
+            dist/*.deb
+            dist/*.rpm
+          if-no-files-found: error
+  android:
+    if: "!startsWith(github.ref, 'refs/tags/')"
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build dependencies
+        run: sudo apt-get update && sudo apt-get install -y autoconf automake libtool libtool-bin libltdl-dev autoconf-archive pkg-config zlib1g-dev libffi-dev libssl-dev cmake patch libegl1 libopengl0 libpulse0
+      - name: Python dependencies
+        run: python -m pip install PySide6==6.12.0 mido packaging jinja2 pkginfo tqdm buildozer==1.6.0
+      - name: Android SDK and NDK
+        run: |
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses >/dev/null || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" 'platform-tools' 'platforms;android-35' 'build-tools;35.0.0' 'ndk;28.2.13676358'
+      - name: Build release APK
+        run: python scripts/build_android.py --sdk "$ANDROID_HOME" --ndk "$ANDROID_HOME/ndk/28.2.13676358"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-Android-unsigned
+          path: dist/*-unsigned.apk
+          if-no-files-found: error
+  publish:
+    if: startsWith(github.ref, 'refs/tags/')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download verified packages for this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          run_id=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/release.yml/runs?branch=codex%2Frelease-0.4&status=success&per_page=30" | jq -r --arg sha "$GITHUB_SHA" '.workflow_runs | map(select(.head_sha == $sha)) | .[0].id // empty')
+          if [ -z "$run_id" ]; then echo 'No successful package build for this commit'; exit 1; fi
+          gh run download "$run_id" --name Clavunora-Linux --dir release-assets
+          gh run download "$run_id" --name Clavunora-Windows --dir release-assets
+      - name: Checksums
+        run: cd release-assets && sha256sum * > SHA256SUMS-DESKTOP.txt
+      - name: Draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" release-assets/* --draft --prerelease --title "Clavunora $GITHUB_REF_NAME" --notes-file docs/RELEASE_NOTES.md

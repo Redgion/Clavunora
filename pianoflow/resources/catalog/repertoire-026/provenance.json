@@ -1,0 +1,15 @@
+{
+  "id": 26,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/14/55/QmWY8qwejrP1LFbKn5yFXZAyCX3abvncsjQJxLCcaeekTt.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #5206349 · Oh! Susanna",
+  "source_score": "https://musescore.com/score/5206349",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

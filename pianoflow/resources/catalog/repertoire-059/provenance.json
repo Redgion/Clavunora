@@ -1,0 +1,14 @@
+{
+  "id": 59,
+  "url": "https://pianosoloist.app/songs/grieg-arietta-op12no1",
+  "file": "https://pianosoloist.app/library/grieg-arietta-op12no1.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/zero/1.0/"
+  ],
+  "edition": "CC0 1.0 · source: PDMX #156643",
+  "provider": "Piano: Soloist / PDMX",
+  "internal_rights": [],
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 4,
+  "review": "pending"
+}

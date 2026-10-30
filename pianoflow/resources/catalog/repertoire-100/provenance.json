@@ -1,0 +1,27 @@
+{
+  "id": 100,
+  "path": "ftp/RachmaninoffS/O23/rach-prelude23-05/rach-prelude23-05.ly",
+  "url": "https://www.mutopiaproject.org/ftp/RachmaninoffS/O23/rach-prelude23-05/rach-prelude23-05.mid",
+  "fields": {
+    "license": [
+      "Creative Commons Attribution-ShareAlike 4.0"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Joram Berger"
+    ],
+    "composer": [
+      "Sergei Rachmaninoff (1873-1943)"
+    ],
+    "title": [
+      "Prelude V"
+    ],
+    "footer": [
+      "Mutopia-2015/09/28-2001"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

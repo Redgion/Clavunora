@@ -1,0 +1,27 @@
+{
+  "id": 65,
+  "path": "ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca-lys/KV331_3_RondoAllaTurca.ly",
+  "url": "https://www.mutopiaproject.org/ftp/MozartWA/KV331/KV331_3_RondoAllaTurca/KV331_3_RondoAllaTurca.mid",
+  "fields": {
+    "license": [
+      "Public Domain"
+    ],
+    "copyright": [],
+    "maintainer": [
+      "Rune Zedeler and Chris Sawer"
+    ],
+    "composer": [
+      "W. A. Mozart"
+    ],
+    "title": [
+      "Rondo Alla Turca"
+    ],
+    "footer": [
+      "Mutopia-2015/08/13-108"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

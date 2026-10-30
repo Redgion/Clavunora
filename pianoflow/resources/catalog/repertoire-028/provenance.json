@@ -1,0 +1,15 @@
+{
+  "id": 28,
+  "url": "https://zenodo.org/records/14984509",
+  "file": "./mxl/4/57/QmeZQofmCknVH2EXVJuFbTpNPM2wNzkytj9MowTBppYp3c.mxl",
+  "licenses": [
+    "https://creativecommons.org/publicdomain/mark/1.0/"
+  ],
+  "provider": "PDMX v8",
+  "edition": "MuseScore #5761428 · My Bonnie Lies Over The Ocean - Charles E. Pratt",
+  "source_score": "https://musescore.com/score/5761428",
+  "license_conflict": false,
+  "changes": "Repeats expanded; ties consolidated; staff hands; explicit single-note fingerings; on-beat grace realization.",
+  "realized_graces": 0,
+  "review": "pending"
+}

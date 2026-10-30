@@ -1,0 +1,27 @@
+{
+  "id": 74,
+  "path": "ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.ly",
+  "url": "https://www.mutopiaproject.org/ftp/SchumannR/O15/SchumannOp15No07/SchumannOp15No07.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Public Domain"
+    ],
+    "maintainer": [
+      "Ying-Chun Liu"
+    ],
+    "composer": [
+      "Robert Alexander Schumann"
+    ],
+    "title": [
+      "Kinderscenen"
+    ],
+    "footer": [
+      "Mutopia-2005/12/27-504"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

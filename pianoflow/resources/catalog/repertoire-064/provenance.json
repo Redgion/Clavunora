@@ -1,0 +1,27 @@
+{
+  "id": 64,
+  "path": "ftp/MozartWA/KV545/K545-1/K545-1.ly",
+  "url": "https://www.mutopiaproject.org/ftp/MozartWA/KV545/K545-1/K545-1.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Creative Commons Attribution-ShareAlike 3.0"
+    ],
+    "maintainer": [
+      "Alejandro Sierra"
+    ],
+    "composer": [
+      "W. A. Mozart"
+    ],
+    "title": [
+      "Sonate 16 in C major"
+    ],
+    "footer": [
+      "Mutopia-2013/09/01-998"
+    ]
+  },
+  "license": "Creative Commons Attribution-ShareAlike 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

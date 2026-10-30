@@ -1,0 +1,23 @@
+{
+  "id": 85,
+  "path": "ftp/ChopinFF/O10/op-10-12-wfi/op-10-12-wfi.ly",
+  "url": "https://www.mutopiaproject.org/ftp/ChopinFF/O10/op-10-12-wfi/op-10-12-wfi.mid",
+  "fields": {
+    "license": [],
+    "copyright": [
+      "Public Domain"
+    ],
+    "maintainer": [
+      "Roland Goretzki"
+    ],
+    "composer": [],
+    "title": [],
+    "footer": [
+      "Mutopia-2018/05/15-743"
+    ]
+  },
+  "license": "Public Domain",
+  "license_url": "https://www.mutopiaproject.org/legal.html",
+  "changes": "MIDI converted to timed notes; staff-based hand labels added; fingerings not imported.",
+  "review": "pending"
+}

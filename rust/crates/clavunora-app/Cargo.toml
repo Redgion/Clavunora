@@ -1,0 +1,34 @@
+[package]
+name = "clavunora-rust"
+version.workspace = true
+edition.workspace = true
+publish.workspace = true
+license.workspace = true
+
+[dependencies]
+clavunora-core = { path = "../clavunora-core" }
+eframe = { version = "0.34.3", default-features = false, features = ["default_fonts", "glow"] }
+midir = "0.11"
+serde.workspace = true
+serde_json.workspace = true
+anyhow.workspace = true
+
+tempfile = "3"
+libloading = "0.8"
+
+image = { version = "0.25", default-features = false, features = ["png"] }
+
+[target.'cfg(target_os = "linux")'.dependencies]
+alsa = "0.11"
+eframe = { version = "0.34.3", default-features = false, features = ["wayland", "x11"] }
+
+[target.'cfg(any(target_os = "windows", target_os = "macos"))'.dependencies]
+cpal = "=0.18.2"
+rfd = { version = "=0.17.2", default-features = false }
+
+[target.'cfg(target_os = "windows")'.build-dependencies]
+winresource = "0.1"
+
+[dev-dependencies]
+rusqlite = { version = "0.41", features = ["bundled"] }
+cpal = "=0.18.2"
