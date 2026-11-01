@@ -35,6 +35,29 @@ jobs:
           echo "ANDROID_NDK_ROOT=$ndk_root" >> "$GITHUB_ENV"
       - name: APK packager
         run: command -v cargo-apk || cargo install cargo-apk --version 0.10.0 --locked
+      - name: Package corresponding source
+        run: |
+          cargo fetch --locked --manifest-path rust/Cargo.toml
+          python scripts/package_rust_source.py
+          mkdir -p dist/android
+          cp dist/*-source.tar.gz dist/android/Clavunora-Android-preview-source.tar.gz
+      - name: Include license notices
+        run: |
+          mkdir -p pianoflow/resources/licenses/clavunora
+          cp LICENSE COPYRIGHT THIRD_PARTY_NOTICES.md AI_USAGE.md pianoflow/resources/licenses/clavunora/
+          cp -R packaging/rust-notices pianoflow/resources/licenses/clavunora/rust
+          cp rust/crates/clavunora-app/assets/FONT-LICENSE.txt pianoflow/resources/licenses/clavunora/brand-font-LICENSE.txt
+      - name: Include dependency licenses
+        shell: python
+        run: |
+          import os, re, shutil
+          from pathlib import Path
+          registry = Path(os.environ.get('CARGO_HOME', str(Path.home() / '.cargo'))) / 'registry/src'
+          for path in registry.rglob('*'):
+              if path.is_file() and re.search(r'license|copying|notice|copyright', path.name, re.I):
+                  target = Path('pianoflow/resources/licenses/clavunora/crates') / path.relative_to(registry)
+                  target.parent.mkdir(parents=True, exist_ok=True)
+                  shutil.copy2(path, target)
       - name: Build installable ARM64 test APK
         working-directory: rust/crates/clavunora-app
         env:
@@ -46,7 +69,7 @@ jobs:
           find rust/target -name '*.apk' -type f -exec cp {} dist/android/Clavunora-Android-arm64-preview.apk \;
           test -s dist/android/Clavunora-Android-arm64-preview.apk
           "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose dist/android/Clavunora-Android-arm64-preview.apk
-          cd dist/android && sha256sum *.apk > SHA256SUMS.txt
+          cd dist/android && sha256sum *.apk *.tar.gz > SHA256SUMS.txt
       - name: Save native cache
         if: always()
         uses: actions/cache/save@v4

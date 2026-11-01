@@ -15,6 +15,7 @@ mod midi_input;
 mod platform;
 mod score_editor;
 mod staff_view;
+mod touch_keyboard;
 use anyhow::{Context, Result, ensure};
 use app::PreviewApp;
 use clavunora_core::store::{Library, import_legacy};

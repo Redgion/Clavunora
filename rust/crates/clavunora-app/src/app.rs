@@ -133,6 +133,7 @@ pub struct PreviewApp {
     waiting: bool,
     started: Instant,
     mouse_note: Option<u8>,
+    touch_keyboard: crate::touch_keyboard::TouchKeyboard,
     computer_notes: BTreeSet<u8>,
     ports: Vec<crate::midi_input::Port>,
     port_index: usize,
@@ -244,6 +245,7 @@ impl PreviewApp {
             waiting: false,
             started: Instant::now(),
             mouse_note: None,
+            touch_keyboard: Default::default(),
             computer_notes: BTreeSet::new(),
             ports: vec![],
             port_index: 0,
@@ -979,6 +981,11 @@ impl PreviewApp {
             self.pause_practice();
         }
         self.drain_midi();
+        if !ctx.input(|i| i.focused) || !matches!(self.page, Page::Practice | Page::FreePlay) {
+            for event in self.touch_keyboard.clear() {
+                self.feed(event);
+            }
+        }
         if !ctx.input(|i| i.focused) {
             self.state.clear_source("computer");
             self.state.clear_source("mouse");
@@ -1459,7 +1466,13 @@ impl PreviewApp {
             ("imports", "Мои пьесы", Icon::Note),
             ("all", "Все произведения", Icon::Library),
         ];
-        let columns = if ui.available_width() < 720.0 { 2 } else { 4 };
+        let columns = if ui.available_width() < 340.0 {
+            1
+        } else if ui.available_width() < 720.0 {
+            2
+        } else {
+            4
+        };
         let width =
             ((ui.available_width() - 16.0 * (columns - 1) as f32) / columns as f32).max(130.0);
         let builtin: BTreeSet<String> = catalog::BUNDLED_SCORES
@@ -2678,8 +2691,18 @@ impl PreviewApp {
                 egui::Stroke::new(1.0_f32, Color32::from_white_alpha(130)),
             );
         }
+        let events = ui.input(|i| i.events.clone());
+        let has_touch = events
+            .iter()
+            .any(|event| matches!(event, egui::Event::Touch { .. }));
+        for event in self.touch_keyboard.update(&events, &keys) {
+            self.feed(event);
+        }
         let pointer = ui.input(|i| i.pointer.interact_pos());
-        let mouse = if response.is_pointer_button_down_on() {
+        let mouse = if !has_touch
+            && !self.touch_keyboard.active()
+            && response.is_pointer_button_down_on()
+        {
             pointer.and_then(|pos| {
                 black_rects
                     .iter()
@@ -3679,6 +3702,25 @@ impl PreviewApp {
 }
 impl eframe::App for PreviewApp {
     fn logic(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        #[cfg(target_os = "android")]
+        if !ctx.input(|i| i.focused) {
+            self.pause_practice();
+            self.stop_demo();
+            if self.midi.connected() {
+                self.midi.disconnect();
+                self.release_midi();
+            }
+            self.state.clear_source("computer");
+            self.state.clear_source("mouse");
+            self.computer_notes.clear();
+            self.mouse_note = None;
+            for event in self.touch_keyboard.clear() {
+                self.feed(event);
+            }
+            self.audio.stop();
+            self.audio_initialized = false;
+            return;
+        }
         if !self.audio_initialized && !self.native_smoke {
             self.audio_initialized = true;
             if let Err(e) = self.audio.start(&self.audio_config) {

@@ -232,7 +232,7 @@ pub fn score_raw(relative: &str) -> Result<String> {
         let directory = executable.parent().context("Нет каталога программы")?;
         let installed = directory.join("resources/catalog");
         let mac_bundle = directory.join("../Resources/catalog");
-        let candidate = if installed.is_dir() {
+        if installed.is_dir() {
             installed
         } else if mac_bundle.is_dir() {
             mac_bundle
@@ -247,8 +247,7 @@ pub fn score_raw(relative: &str) -> Result<String> {
                 .unwrap_or(installed)
         }
         .canonicalize()
-        .context("Не найдена библиотека нот. Распакуйте приложение вместе с папкой resources")?;
-        candidate
+        .context("Не найдена библиотека нот. Распакуйте приложение вместе с папкой resources")?
     };
     let path = root
         .join(relative)

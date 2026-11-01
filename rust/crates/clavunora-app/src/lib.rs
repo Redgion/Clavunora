@@ -12,6 +12,7 @@ mod midi_input;
 mod platform;
 mod score_editor;
 mod staff_view;
+mod touch_keyboard;
 use std::{ffi::CString, io::Read};
 
 fn launch(android: android_activity::AndroidApp) -> anyhow::Result<()> {
