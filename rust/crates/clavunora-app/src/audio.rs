@@ -725,10 +725,15 @@ fn run(config: &Config, shared: &Arc<Mutex<Shared>>, stop: &AtomicBool) -> Resul
     Ok(())
 }
 
-#[cfg(any(target_os = "windows", target_os = "macos", test))]
+#[cfg(any(
+    target_os = "windows",
+    target_os = "macos",
+    target_os = "android",
+    test
+))]
 #[path = "audio_desktop.rs"]
 mod desktop;
-#[cfg(any(target_os = "windows", target_os = "macos"))]
+#[cfg(any(target_os = "windows", target_os = "macos", target_os = "android"))]
 use desktop::run;
 
 /// Short explicit diagnostic through the real ALSA device; does not open a library or save audio.

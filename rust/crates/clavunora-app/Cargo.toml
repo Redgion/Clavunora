@@ -32,3 +32,27 @@ winresource = "0.1"
 [dev-dependencies]
 rusqlite = { version = "0.41", features = ["bundled"] }
 cpal = "=0.18.2"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[target.'cfg(target_os = "android")'.dependencies]
+eframe = { version = "0.34.3", default-features = false, features = ["android-native-activity", "glow", "default_fonts"] }
+android-activity = { version = "0.6.1", features = ["native-activity"] }
+cpal = "=0.18.2"
+
+[package.metadata.android]
+package = "org.redgion.clavunora.preview"
+label = "Clavunora Preview"
+assets = "../../../pianoflow/resources"
+build_targets = ["aarch64-linux-android"]
+
+[package.metadata.android.sdk]
+min_sdk_version = 29
+target_sdk_version = 36
+
+[package.metadata.android.application]
+label = "Clavunora Preview"
+
+[package.metadata.android.application.activity]
+config_changes = "orientation|keyboardHidden|screenSize|screenLayout|density|uiMode"

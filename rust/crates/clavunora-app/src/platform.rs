@@ -8,7 +8,17 @@ use std::{
     path::{Path, PathBuf},
 };
 
+#[cfg(target_os = "android")]
+pub static ANDROID_DATA: std::sync::OnceLock<PathBuf> = std::sync::OnceLock::new();
+
 pub fn config_root() -> Result<PathBuf> {
+    #[cfg(target_os = "android")]
+    {
+        Ok(ANDROID_DATA
+            .get()
+            .context("Android data directory not initialized")?
+            .clone())
+    }
     #[cfg(target_os = "windows")]
     {
         Ok(PathBuf::from(

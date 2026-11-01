@@ -1,0 +1,48 @@
+name: Clavunora Android preview
+on:
+  workflow_dispatch:
+  push:
+    branches: [codex/android-preview]
+permissions:
+  contents: read
+jobs:
+  apk:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 60
+    env:
+      CARGO_BUILD_JOBS: '4'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Rust Android toolchain
+        run: rustup toolchain install 1.99.1 --profile minimal --target aarch64-linux-android && rustup default 1.99.1
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cargo/registry
+            ~/.cargo/bin/cargo-apk
+            rust/target
+          key: android-arm64-${{ hashFiles('rust/Cargo.lock') }}-${{ github.sha }}
+          restore-keys: android-arm64-
+      - name: Android SDK
+        run: |
+          sdkmanager "platforms;android-36" "build-tools;36.0.0"
+          echo "ANDROID_NDK_ROOT=$ANDROID_NDK_LATEST_HOME" >> "$GITHUB_ENV"
+      - name: APK packager
+        run: command -v cargo-apk || cargo install cargo-apk --version 0.10.0 --locked
+      - name: Build installable ARM64 test APK
+        working-directory: rust/crates/clavunora-app
+        env:
+          RUSTFLAGS: --remap-path-prefix=/home/runner=~ -C link-arg=-Wl,-z,max-page-size=16384
+        run: cargo apk build --lib --target aarch64-linux-android
+      - name: Collect APK and verify signature
+        run: |
+          mkdir -p dist/android
+          find rust/target -name '*.apk' -type f -exec cp {} dist/android/Clavunora-Android-arm64-preview.apk \;
+          test -s dist/android/Clavunora-Android-arm64-preview.apk
+          "$ANDROID_HOME/build-tools/36.0.0/apksigner" verify --verbose dist/android/Clavunora-Android-arm64-preview.apk
+          cd dist/android && sha256sum *.apk > SHA256SUMS.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Clavunora-Android-arm64-preview
+          path: dist/android/
+          if-no-files-found: error

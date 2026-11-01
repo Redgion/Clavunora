@@ -217,27 +217,39 @@ pub fn birthday_variants() -> Vec<(String, Song)> {
 
 /// Scores are independently licensed data shipped beside the executable.
 /// Do not embed third-party editions in the GPL program binary.
+#[cfg(target_os = "android")]
+pub static ANDROID_CATALOG: std::sync::OnceLock<std::path::PathBuf> = std::sync::OnceLock::new();
+
 pub fn score_raw(relative: &str) -> Result<String> {
-    let executable = std::env::current_exe()?;
-    let directory = executable.parent().context("Нет каталога программы")?;
-    let installed = directory.join("resources/catalog");
-    let mac_bundle = directory.join("../Resources/catalog");
-    let root = if installed.is_dir() {
-        installed
-    } else if mac_bundle.is_dir() {
-        mac_bundle
-    } else {
-        // Development runs may use a checkout relative to their working directory.
-        // Never embed the developer's absolute checkout path in distributed binaries.
-        let cwd = std::env::current_dir()?;
-        cwd.ancestors()
-            .take(4)
-            .map(|ancestor| ancestor.join("pianoflow/resources/catalog"))
-            .find(|path| path.is_dir())
-            .unwrap_or(installed)
-    }
-    .canonicalize()
-    .context("Не найдена библиотека нот. Распакуйте приложение вместе с папкой resources")?;
+    #[cfg(target_os = "android")]
+    let root = ANDROID_CATALOG
+        .get()
+        .context("Android catalog not initialized")?
+        .canonicalize()?;
+    #[cfg(not(target_os = "android"))]
+    let root = {
+        let executable = std::env::current_exe()?;
+        let directory = executable.parent().context("Нет каталога программы")?;
+        let installed = directory.join("resources/catalog");
+        let mac_bundle = directory.join("../Resources/catalog");
+        let candidate = if installed.is_dir() {
+            installed
+        } else if mac_bundle.is_dir() {
+            mac_bundle
+        } else {
+            // Development runs may use a checkout relative to their working directory.
+            // Never embed the developer's absolute checkout path in distributed binaries.
+            let cwd = std::env::current_dir()?;
+            cwd.ancestors()
+                .take(4)
+                .map(|ancestor| ancestor.join("pianoflow/resources/catalog"))
+                .find(|path| path.is_dir())
+                .unwrap_or(installed)
+        }
+        .canonicalize()
+        .context("Не найдена библиотека нот. Распакуйте приложение вместе с папкой resources")?;
+        candidate
+    };
     let path = root
         .join(relative)
         .canonicalize()

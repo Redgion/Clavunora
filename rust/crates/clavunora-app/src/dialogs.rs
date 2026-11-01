@@ -34,6 +34,11 @@ pub fn choose(kind: Kind) -> Result<Option<PathBuf>> {
             picker.pick_file()
         })
     }
+    #[cfg(target_os = "android")]
+    {
+        let _ = (title, extensions);
+        anyhow::bail!("Системный выбор файла Android пока недоступен в этой тестовой сборке")
+    }
     #[cfg(target_os = "linux")]
     {
         use anyhow::Context;
