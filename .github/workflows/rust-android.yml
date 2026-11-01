@@ -13,6 +13,9 @@ jobs:
       CARGO_BUILD_JOBS: '4'
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
       - name: Rust Android toolchain
         run: rustup toolchain install 1.99.1 --profile minimal --target aarch64-linux-android && rustup default 1.99.1
       - uses: actions/cache/restore@v4
