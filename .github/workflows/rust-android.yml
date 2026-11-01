@@ -65,6 +65,10 @@ jobs:
         working-directory: rust/crates/clavunora-app
         env:
           RUSTFLAGS: --remap-path-prefix=/home/runner=~ -C link-arg=-Wl,-z,max-page-size=16384
+          CFLAGS: -ffile-prefix-map=/home/runner=~ -fdebug-prefix-map=/home/runner=~
+          CXXFLAGS: -ffile-prefix-map=/home/runner=~ -fdebug-prefix-map=/home/runner=~
+          CARGO_PROFILE_DEV_DEBUG: '0'
+          CARGO_PROFILE_DEV_OPT_LEVEL: '1'
         run: cargo apk build --lib --target aarch64-linux-android
       - name: Collect APK and verify signature
         run: |
