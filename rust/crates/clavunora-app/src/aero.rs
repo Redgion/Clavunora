@@ -103,7 +103,11 @@ pub fn style(ctx: &egui::Context, dark: bool) {
     }
     style.spacing.item_spacing = Vec2::new(10.0, 10.0);
     style.spacing.button_padding = Vec2::new(14.0, 8.0);
-    style.spacing.interact_size.y = 32.0;
+    style.spacing.interact_size.y = if cfg!(target_os = "android") {
+        44.0
+    } else {
+        32.0
+    };
     style.spacing.slider_width = 180.0;
     style
         .text_styles

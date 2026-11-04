@@ -1088,10 +1088,13 @@ impl PreviewApp {
             aero.plain = self.plain;
             aero.background(ui, self.dark);
         }
+        let compact = ui.max_rect().height() < 540.0;
         let (header, _) = ui.allocate_exact_size(
             Vec2::new(
                 ui.available_width(),
-                if self.page == Page::Home {
+                if compact {
+                    86.0
+                } else if self.page == Page::Home {
                     146.0
                 } else {
                     128.0
@@ -1108,7 +1111,10 @@ impl PreviewApp {
                 egui::FontFamily::Name("brand".into())
             },
         );
-        let name = Pos2::new(header.center().x - 105.0, header.top() + 43.0);
+        let name = Pos2::new(
+            header.center().x - 105.0,
+            header.top() + if compact { 29.0 } else { 43.0 },
+        );
         aero::paint_icon(
             &p,
             Rect::from_center_size(Pos2::new(name.x - 41.0, name.y), Vec2::splat(52.0)),
@@ -1134,7 +1140,10 @@ impl PreviewApp {
             },
         );
         let theme_rect = Rect::from_center_size(
-            Pos2::new(header.right() - 34.0, header.top() + 38.0),
+            Pos2::new(
+                header.right() - 34.0,
+                header.top() + if compact { 29.0 } else { 38.0 },
+            ),
             Vec2::new(46.0, 38.0),
         );
         if ui
@@ -1176,7 +1185,10 @@ impl PreviewApp {
             if ui
                 .put(
                     Rect::from_center_size(
-                        Pos2::new(header.center().x, header.top() + 95.0),
+                        Pos2::new(
+                            header.center().x,
+                            header.top() + if compact { 67.0 } else { 95.0 },
+                        ),
                         Vec2::new(120.0, 32.0),
                     ),
                     egui::Button::new("‹ Главная"),
@@ -1188,7 +1200,10 @@ impl PreviewApp {
             }
         } else {
             p.text(
-                Pos2::new(header.center().x, header.top() + 96.0),
+                Pos2::new(
+                    header.center().x,
+                    header.top() + if compact { 67.0 } else { 96.0 },
+                ),
                 egui::Align2::CENTER_CENTER,
                 "Музыка начинается с вас",
                 egui::FontId::proportional(18.0),
@@ -1208,7 +1223,7 @@ impl PreviewApp {
             ),
             Vec2::new(
                 body_width,
-                (ui.max_rect().bottom() - header.bottom() - 50.0).max(170.0),
+                (ui.max_rect().bottom() - header.bottom() - 50.0).max(1.0),
             ),
         );
         if self.page != Page::Home
@@ -1217,8 +1232,12 @@ impl PreviewApp {
             aero.glass(ui.painter(), body, self.dark, false);
         }
         let inner = body.shrink2(Vec2::new(
-            if self.page == Page::Home { 8.0 } else { 24.0 },
-            18.0,
+            if self.page == Page::Home || compact {
+                8.0
+            } else {
+                24.0
+            },
+            if compact { 8.0 } else { 18.0 },
         ));
         let reset_scroll = std::mem::take(&mut self.reset_page_scroll);
         ui.scope_builder(
@@ -1227,7 +1246,7 @@ impl PreviewApp {
                 .id_salt("main-content"),
             |ui| {
                 ui.set_max_width(inner.width());
-                let mut scroll = egui::ScrollArea::vertical()
+                let mut scroll = egui::ScrollArea::both()
                     .id_salt(("page-content", self.page))
                     .auto_shrink([false, false])
                     .max_height(inner.height());
@@ -1347,7 +1366,9 @@ impl PreviewApp {
         let gap = 18.0;
         let width =
             ((ui.available_width() - gap * (columns - 1) as f32) / columns as f32).min(255.0);
-        let height = if ui.available_height() < 420.0 {
+        let height = if ui.ctx().content_rect().height() < 540.0 {
+            124.0
+        } else if ui.available_height() < 420.0 {
             156.0
         } else {
             183.0
@@ -2474,7 +2495,11 @@ impl PreviewApp {
             .order(egui::Order::Foreground)
             .show(ui.ctx(), |ui| {
                 if ui
-                    .small_button("Esc · назад")
+                    .button(if cfg!(target_os = "android") {
+                        "‹ К занятию"
+                    } else {
+                        "Esc · назад"
+                    })
                     .on_hover_text("Пауза и возврат к настройкам занятия")
                     .clicked()
                 {
@@ -2515,8 +2540,9 @@ impl PreviewApp {
     }
     fn keyboard_height(&self, ui: &egui::Ui) -> f32 {
         if self.performance_view {
-            (ui.clip_rect().height() * 0.24).clamp(110.0, 260.0)
-                * self.keyboard_config.zoom.max(0.5)
+            ((ui.clip_rect().height() * 0.24).clamp(64.0, 260.0)
+                * self.keyboard_config.zoom.max(0.5))
+            .min((ui.clip_rect().height() * 0.48).max(32.0))
         } else {
             ((if self.page == Page::FreePlay {
                 190.0
@@ -3586,7 +3612,7 @@ impl PreviewApp {
             self.save_audio_config();
         }
         ui.label(self.audio.status());
-        ui.horizontal(|ui| {
+        ui.horizontal_wrapped(|ui| {
             if ui.button("Проверить звук: ля").clicked() {
                 self.audio.test_note();
             }
@@ -3662,7 +3688,7 @@ impl PreviewApp {
                     ui.selectable_value(&mut self.port_index, i, &name.name);
                 }
             });
-        ui.horizontal(|ui| {
+        ui.horizontal_wrapped(|ui| {
             if ui
                 .add_enabled(!self.ports.is_empty(), egui::Button::new("Подключить"))
                 .clicked()
@@ -3702,6 +3728,48 @@ impl PreviewApp {
 }
 impl eframe::App for PreviewApp {
     fn logic(&mut self, ctx: &egui::Context, _frame: &mut eframe::Frame) {
+        #[cfg(target_os = "android")]
+        if ctx.input_mut(|i| i.consume_key(egui::Modifiers::NONE, egui::Key::BrowserBack)) {
+            if self.backups.job.is_some() {
+                return;
+            }
+            if let Some(editor) = &mut self.editor {
+                if editor.dirty() {
+                    editor.discard = true;
+                } else {
+                    self.editor = None;
+                }
+                return;
+            }
+            if self.performance_view {
+                self.leave_performance();
+                return;
+            }
+            if self.page != Page::Home {
+                self.navigate(Page::Home);
+                return;
+            }
+            self.pause_practice();
+            self.stop_demo();
+            self.retry_saves();
+            self.audio.stop();
+            self.audio_initialized = false;
+            self.state.clear_source("computer");
+            self.state.clear_source("mouse");
+            self.computer_notes.clear();
+            self.mouse_note = None;
+            if self.midi.connected() {
+                self.midi.disconnect();
+                self.release_midi();
+            }
+            for event in self.touch_keyboard.clear() {
+                self.feed(event);
+            }
+            if let Err(error) = crate::platform::minimize_android() {
+                self.error = error.to_string();
+            }
+            return;
+        }
         #[cfg(target_os = "android")]
         if !ctx.input(|i| i.focused) {
             self.pause_practice();
@@ -4922,7 +4990,12 @@ mod tests {
         let ctx = egui::Context::default();
         aero::install_fonts(&ctx);
         for view in [NotationView::Sheet, NotationView::Both] {
-            for size in [Vec2::new(760.0, 540.0), Vec2::new(1200.0, 800.0)] {
+            for size in [
+                Vec2::new(640.0, 320.0),
+                Vec2::new(800.0, 360.0),
+                Vec2::new(760.0, 540.0),
+                Vec2::new(1200.0, 800.0),
+            ] {
                 app.notation.view = view;
                 let output = ctx.run_ui(
                     egui::RawInput {

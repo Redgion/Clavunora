@@ -39,6 +39,8 @@ crate-type = ["cdylib", "rlib"]
 [target.'cfg(target_os = "android")'.dependencies]
 eframe = { version = "0.34.3", default-features = false, features = ["android-native-activity", "glow", "default_fonts"] }
 android-activity = { version = "0.6.1", features = ["native-activity"] }
+jni = "0.21.1"
+ndk-context = "0.1.1"
 cpal = "=0.18.2"
 
 [package.metadata.android]
@@ -55,4 +57,5 @@ target_sdk_version = 36
 label = "Clavunora Preview"
 
 [package.metadata.android.application.activity]
+orientation = "sensorLandscape"
 config_changes = "orientation|keyboardHidden|screenSize|screenLayout|density|uiMode"

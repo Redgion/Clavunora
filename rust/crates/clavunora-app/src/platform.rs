@@ -85,3 +85,24 @@ mod tests {
         );
     }
 }
+
+/// Keep the activity and its profile alive when the system Back gesture is used.
+#[cfg(target_os = "android")]
+pub fn minimize_android() -> Result<()> {
+    let context = ndk_context::android_context();
+    // ndk-context is initialized by android-activity for the activity lifetime.
+    let vm = unsafe { jni::JavaVM::from_raw(context.vm().cast()) }?;
+    let mut env = vm.attach_current_thread()?;
+    let activity = unsafe { jni::objects::JObject::from_raw(context.context().cast()) };
+    let result = env.call_method(
+        &activity,
+        "moveTaskToBack",
+        "(Z)Z",
+        &[jni::objects::JValue::Bool(1)],
+    );
+    if result.is_err() && env.exception_check()? {
+        env.exception_clear()?;
+    }
+    anyhow::ensure!(result?.z()?, "Android refused to move task to background");
+    Ok(())
+}
